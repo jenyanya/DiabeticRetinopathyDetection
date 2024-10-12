@@ -27,6 +27,6 @@ ResNet was trained using Adam optimizer with primary learning rate being 0.001, 
 The own network was trained using Adam optimizer with starting learning rate 0.0002 for 30 epochs, with cosine annealing used from the first epoch.
 ![own](https://github.com/user-attachments/assets/cf54f55d-eed5-4f44-9f8d-c39557976035)
 
-resnet             |  own
+own             |  resnet
 :-------------------------:|:-------------------------:
-![](https://github.com/user-attachments/assets/06a18843-3144-4155-b218-963cb3773b6e)  |  ![](https://github.com/user-attachments/assets/8f884032-4110-43df-b37e-676e717df6c5)
+![](https://github.com/user-attachments/assets/12b89a07-48ae-4d22-9249-4f20fa4e7cf0)  |  ![](https://github.com/user-attachments/assets/0e4e7f46-cfb3-47e7-b4b2-ceb08bfecaf9)

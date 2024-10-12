@@ -34,5 +34,5 @@ own             |  resnet
 :-------------------------:|:-------------------------:
 ![](https://github.com/user-attachments/assets/12b89a07-48ae-4d22-9249-4f20fa4e7cf0)  |  ![](https://github.com/user-attachments/assets/0e4e7f46-cfb3-47e7-b4b2-ceb08bfecaf9)
 ### ROC-curve
-The ROC-curve for 2 models. The own model is represented by a black line, ResNet-50 by a red one.
+The ROC-curve for 2 models. The own model is represented by a black line, ResNet-50 by a red one, random classifier is shown as a blue dotted line.
 ![](https://github.com/user-attachments/assets/ce91b0dc-9653-469a-a37d-de22b14398b7)

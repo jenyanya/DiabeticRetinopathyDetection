@@ -1,6 +1,6 @@
 # Diabetic Retinopathy Detection
 ## Introduction
-Hey! This is my bachelor's project: diabetic retinopathy detection using convolutional neural networks. To perform this task I have trained 3 networks: [ResNet-50](https://arxiv.org/abs/1512.03385) and a very small CNN of my own design!
+Hey! This is my bachelor's project: diabetic retinopathy detection using convolutional neural networks. To perform this task I have trained 2 networks: [ResNet-50](https://arxiv.org/abs/1512.03385) and a very small CNN of my own design!
 The 2 former were trained with the use of **transfer learning**. 
 ## Data
 The data were obtained at [Kaggle](https://www.kaggle.com/competitions/diabetic-retinopathy-detection).
@@ -18,5 +18,8 @@ The architecture was motivated by the need of the model to take into the conside
 It has 3 paths for image to flow through, then the inputs are flattened and concatenated, feeding into classification layers.
 In those 3 paths the first layers consist of 55x55 with stride 9, 31x31 with stride 7, and 11x11 with stride 3 convolutions respectively. In all paths they are followed by 3x3 stride 1 convolutions.
 ## Training
-ResNet was trained using Adam with primary learning rate being 0.001, 10 epochs warm up from 0.0005 followed by cosine annealing with minimum learning rate reached at 100 epochs. During training test error was decreasing and started to increase around 27th epoch so **early stopping** was used. 
 Due to compute limitations ResNet was trained on image size 299x299, while the own network had an input size of 512x512.
+### ResNet
+ResNet was trained using Adam optimizer with primary learning rate being 0.001, 10 epochs warm up from 0.0005 followed by cosine annealing with minimum learning rate reached at 100 epochs. During training test error was decreasing and started to increase around 27th epoch so **early stopping** was used. 
+### Own network
+The own network was trained using Adam optimizer with starting learning rate 0.0002 for 30 epochs, with cosine annealing used from the first epoch. 

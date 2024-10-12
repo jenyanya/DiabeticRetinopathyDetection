@@ -29,7 +29,7 @@ The own network was trained using Adam optimizer with starting learning rate 0.0
 
 ## Model evaluation
 ### Confusion matrices
-With the help of Matthews correlation the best decision thresholds were found. The confusion matrices obtained using these thresholds can be found below.
+With the help of Matthews correlation the best decision thresholds were found on the test dataset that was augmented in the same way as a train set. The confusion matrices obtained using these thresholds can be found below.
 own             |  resnet
 :-------------------------:|:-------------------------:
 ![](https://github.com/user-attachments/assets/12b89a07-48ae-4d22-9249-4f20fa4e7cf0)  |  ![](https://github.com/user-attachments/assets/0e4e7f46-cfb3-47e7-b4b2-ceb08bfecaf9)

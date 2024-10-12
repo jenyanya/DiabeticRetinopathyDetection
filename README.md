@@ -1,7 +1,7 @@
 # Diabetic Retinopathy Detection
 ## Introduction
 Hey! This is my bachelor's project: diabetic retinopathy detection using convolutional neural networks. To perform this task I have trained 2 networks: [ResNet-50](https://arxiv.org/abs/1512.03385) and a very small CNN of my own design!
-The 2 former were trained with the use of **transfer learning**. 
+The former was trained with the use of transfer learning. 
 ## Data
 The data were obtained at [Kaggle](https://www.kaggle.com/competitions/diabetic-retinopathy-detection).
 The examples in the Kaggle dataset were classified into 5 categories according to [ETDRS](https://www.researchgate.net/figure/International-Clinical-Diabetic-Retinopathy-Scale-Compared-with-Early-Treatment-Diabetic_tbl1_340168321).

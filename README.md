@@ -21,10 +21,10 @@ In those 3 paths the first layers consist of 55x55 with stride 9, 31x31 with str
 ## Training
 Due to compute limitations ResNet was trained on image size 299x299, while the own network had an input size of 512x512.
 ### ResNet
-ResNet was trained using Adam optimizer with primary learning rate being 0.001, 10 epochs warm up from 0.0005 followed by cosine annealing with minimum learning rate reached at 100 epochs. During training test error was decreasing and started to increase around 27th epoch so **early stopping** was used. 
+ResNet was trained using Adam optimizer with primary learning rate being 0.001, 10 epochs warm up from 0.0005 followed by cosine annealing with minimum learning rate reached at 100 epochs. During training test error started to increase around 27th epoch so **early stopping** was used. 
 ![](https://github.com/user-attachments/assets/348a1fa4-e84e-4423-89a1-c7b55f8a3780)
 ### Own network
-The own network was trained using Adam optimizer with starting learning rate 0.0002 for 30 epochs, with cosine annealing used from the first epoch.
+The own network was trained using Adam optimizer with starting learning rate 0.0002 for 30 epochs, with cosine annealing used from the first epoch. Test error stopped increasing around 19-th epoch, so we can choose this model.
 ![](https://github.com/user-attachments/assets/cf54f55d-eed5-4f44-9f8d-c39557976035)
 
 ## Model evaluation
